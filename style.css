@@ -52,3 +52,7 @@ body {
     box-shadow: none !important;
     border: none !important;
 }
+
+.bgnavbar {
+    background-color:#26233D;
+}
