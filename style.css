@@ -18,7 +18,16 @@ background: linear-gradient(90deg, #555, #aaa, #555);
     width:48px;
 }
 
+.dim_icon{
+    width: 100px; 
+    height:100px;
+} 
+
 .dimarrow{
     width:45px; 
     height:67px;
+}
+
+.skills_gap{
+    gap: 100px;
 }

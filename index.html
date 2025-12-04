@@ -14,7 +14,7 @@
 <body class="text-white fs-4">
     <div class="bggradient">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark py-2">
+            <nav class="navbar navbar-expand-lg navbar-dark py-2" id="accueil">
                 <div class="container px-3 mt-2 border rounded-4 border-secondary shadow bgnavbar">
 
                     <a class="navbar-brand me-3 d-flex align-items-center" href="#">
@@ -38,11 +38,11 @@
                     <!-- Menu déroulant -->
                     <div class="collapse navbar-collapse justify-content-center mt-3 mt-lg-0" id="navbarNav">
                         <ul class="navbar-nav gap-1 gap-lg-4 text-center bg-dark bg-opacity-50 rounded-4 p-3 p-lg-0">
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Project</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#accueil">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#a_propos">A propos de moi</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#competences">Compétences</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#projets">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -80,13 +80,13 @@
         </div>
 
         <!-- Bouton déroulant -->
-        <div class="d-flex justify-content-center align-items-center bg-black mt-5 mx-auto rounded-5 dimarrow">
+        <div class="d-flex justify-content-center align-items-center bg-black mt-5 mx-auto rounded-5 dimarrow" id="a_propos">
             <img src="images/down_arrow.png" alt="" class="mt-4 w-25">
         </div>
         <h1 class="text-center mt-5 mb-5">A propos de moi</h1>
         <div class="container mb-5">
             <div class="row g-4">
-                <div class="col-lg-8 col-md-6 col-lg-4 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <div class="card bg-dark bg-opacity-50 text-white h-100 shadow rounded-4 border-0">
                         <div class="card-body d-flex flex-column align-items-center p-4">
                             <p class="card-text text-center">Etudiant en informatique à l'école Hexagone en 2ème année.
@@ -124,7 +124,18 @@
                 </div>
             </div>
         </div>
-        <footer class="text-center bg-black text-white py-4 h5 m-0">
+        <h1 class="text-center mt-5 mb-5 " id="competences">Compétences et outils</h1>
+        <div class="d-flex space-evenly align-items-center mb-5 flex-wrap justify-content-center skills_gap container">
+            <img src="/images/icon_skill/skill-icons--html.png" alt="html_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--css.png" alt="css_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--bootstrap.png" alt="bootstrap_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--javascript.png" alt="javascript_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--php.png" alt="php_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--mysql.png" alt="mysql_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--python.png" alt="python_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+        </div>
+        <footer class="text-center bg-black text-white py-4 h5 m-0 d-flex justify-content-center align-items-center">
+            <img src="/images/logo.png" alt="logo_Antoine_VIVIEN" class="mb-2 dim_icon me-2">
             <p>&copy; 2025 Antoine VIVIEN. Tout droits réservés.</p>
         </footer>
     </div>
