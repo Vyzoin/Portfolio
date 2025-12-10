@@ -39,7 +39,8 @@
                     <div class="collapse navbar-collapse justify-content-center mt-3 mt-lg-0" id="navbarNav">
                         <ul class="navbar-nav gap-1 gap-lg-4 text-center bg-dark bg-opacity-50 rounded-4 p-3 p-lg-0">
                             <li class="nav-item"><a class="nav-link text-white" href="#accueil">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#a_propos">A propos de moi</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#a_propos">A propos de moi</a>
+                            </li>
                             <li class="nav-item"><a class="nav-link text-white" href="#competences">Compétences</a></li>
                             <li class="nav-item"><a class="nav-link text-white" href="#projets">Projets</a></li>
                             <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
@@ -80,7 +81,8 @@
         </div>
 
         <!-- Bouton déroulant -->
-        <div class="d-flex justify-content-center align-items-center bg-black mt-5 mx-auto rounded-5 dimarrow" id="a_propos">
+        <div class="d-flex justify-content-center align-items-center bg-black mt-5 mx-auto rounded-5 dimarrow"
+            id="a_propos">
             <img src="images/down_arrow.png" alt="" class="mt-4 w-25">
         </div>
         <h1 class="text-center mt-5 mb-5">A propos de moi</h1>
@@ -126,14 +128,42 @@
         </div>
         <h1 class="text-center mt-5 mb-5 " id="competences">Compétences et outils</h1>
         <div class="d-flex space-evenly align-items-center mb-5 flex-wrap justify-content-center skills_gap container">
-            <img src="/images/icon_skill/skill-icons--html.png" alt="html_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--css.png" alt="css_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--bootstrap.png" alt="bootstrap_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--javascript.png" alt="javascript_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--php.png" alt="php_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--mysql.png" alt="mysql_icon" class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="/images/icon_skill/skill-icons--python.png" alt="python_icon" class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--html.png" alt="html_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--css.png" alt="css_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--bootstrap.png" alt="bootstrap_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--javascript.png" alt="javascript_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--php.png" alt="php_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--mysql.png" alt="mysql_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="/images/icon_skill/skill-icons--python.png" alt="python_icon"
+                class="dim_icon rounded-pill p-3 bgnavbar">
         </div>
+
+        <section class="container mb-5 d-flex justify-content-center align-items-center flex-column">
+            <h2>Contactez-moi</h2>
+            <form class="d-flex flex-column container" action="index.html#accueil" method="post">
+                <div class="d-flex gap-3 mt-5 mb-3 flex-wrap justify-content-center">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" class="rounded-pill border" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="rounded-pill" required>
+                    </div>
+                </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" class="rounded-3" required></textarea>
+
+                <button class="btngradient border-0 rounded-pill px-3 py-2 shadow" type="submit">Envoyer</button>
+            </form>
+        </section>
+
         <footer class="text-center bg-black text-white py-4 h5 m-0 d-flex justify-content-center align-items-center">
             <img src="/images/logo.png" alt="logo_Antoine_VIVIEN" class="mb-2 dim_icon me-2">
             <p>&copy; 2025 Antoine VIVIEN. Tout droits réservés.</p>
