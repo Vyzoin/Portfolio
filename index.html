@@ -14,23 +14,36 @@
 <!-- Affichage du toast -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const form = document.querySelector('section#contact form') || document.querySelector('form');
-        const toastEl = document.getElementById('submitToast');
-        const toast = toastEl ? new bootstrap.Toast(toastEl, { delay: 3000 }) : null;
-
+        const form = document.querySelector('section#contact form');
         if (!form) return;
+
+        const toastEl = document.getElementById('submitToast');
+        if (!toastEl) return;
+
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            // afficher la notification
-            if (toast) toast.show();
-            // remonter en haut
+            toast.show();
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            // réinitialiser le formulaire après un petit délai pour laisser le toast s'afficher
             setTimeout(() => form.reset(), 600);
-        }, { passive: false });
+        });
     });
 </script>
+
+<!-- TOAST -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="submitToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+        aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Message envoyé avec succès !
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+</div>
 
 <body class="text-white fs-4" style="padding-top: 50px;">
     <div class="">
@@ -55,7 +68,7 @@
                         <button
                             class="btn d-flex align-items-center justify-content-center p-2 border-0 rounded-3 text-white"
                             aria-pressed="false" title="Basculer le thème">
-                            <i class="bi bi-moon-fill fs-4"></i>
+                            <img src="images/light_mode.svg" alt="Light Mode" width="32" height="32">
                         </button>
                     </div>
 
@@ -159,14 +172,12 @@
         <div class="d-flex space-evenly align-items-center mb-5 flex-wrap justify-content-center skills_gap container">
             <img src="images/icon_skill/skill-icons--html.png" alt="html_icon"
                 class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="images/icon_skill/skill-icons--css.png" alt="css_icon"
-                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="images/icon_skill/skill-icons--css.png" alt="css_icon" class="dim_icon rounded-pill p-3 bgnavbar">
             <img src="images/icon_skill/skill-icons--bootstrap.png" alt="bootstrap_icon"
                 class="dim_icon rounded-pill p-3 bgnavbar">
             <img src="images/icon_skill/skill-icons--javascript.png" alt="javascript_icon"
                 class="dim_icon rounded-pill p-3 bgnavbar">
-            <img src="images/icon_skill/skill-icons--php.png" alt="php_icon"
-                class="dim_icon rounded-pill p-3 bgnavbar">
+            <img src="images/icon_skill/skill-icons--php.png" alt="php_icon" class="dim_icon rounded-pill p-3 bgnavbar">
             <img src="images/icon_skill/skill-icons--mysql.png" alt="mysql_icon"
                 class="dim_icon rounded-pill p-3 bgnavbar">
             <img src="images/icon_skill/skill-icons--python.png" alt="python_icon"
