@@ -1,8 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-}
-
-.bggradient {
     background: linear-gradient(180deg, #0B031C 0%, #1A0B3D 50%, #2D1B69 100%);
 }
 
@@ -30,4 +27,10 @@ background: linear-gradient(90deg, #555, #aaa, #555);
 
 .skills_gap{
     gap: 100px;
+}
+
+#accueil,
+#competences,
+#projets {
+    scroll-margin-top: 90px;
 }
